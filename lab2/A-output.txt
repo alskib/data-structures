@@ -1,0 +1,196 @@
+C:\Users\franklin\Documents\My Dropbox\class\cosc3319\labs\2\main
+Lab 2
+-----
+c - Use C Option Data
+b - Use B Option Data
+a - Use A Option Data
+---------------------
+> a
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert date:
+Month > january
+Day   > 15
+Year  > 1956
+Pushed JANUARY 15 1956 into stack 2.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert date:
+Month > february
+Day   > 14
+Year  > 1947
+Pushed FEBRUARY 14 1947 into stack 2.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert date:
+Month > october
+Day   > 16
+Year  > 1986
+Pushed OCTOBER 16 1986 into stack 3.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert date:
+Month > september
+Day   > 17
+Year  > 1842
+Pushed SEPTEMBER 17 1842 into stack 2.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert date:
+Month > december
+Day   > 24
+Year  > 1996
+Pushed DECEMBER 24 1996 into stack 1.
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 3
+Popped: OCTOBER 16, 1986 from stack           3
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 1
+Popped: DECEMBER 24, 1996 from stack           1
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert date:
+Month > march
+Day   > 16
+Year  > 1992
+Pushed MARCH 16 1992 into stack 3.
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 3
+Popped: MARCH 16, 1992 from stack           3
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 1
+Underflow. Stack empty.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert date:
+Month > january
+Day   > 15
+Year  > 1956
+Pushed JANUARY 15 1956 into stack 2.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert date:
+Month > april
+Day   > 4
+Year  > 1492
+Pushed APRIL 4 1492 into stack 3.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert date:
+Month > november
+Day   > 7
+Year  > 1776
+Pushed NOVEMBER 7 1776 into stack 3.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert date:
+Month > june
+Day   > 12
+Year  > 1994
+Pushed JUNE 12 1994 into stack 3.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert date:
+Month > july
+Day   > 4
+Year  > 1776
+Pushed JULY 4 1776 into stack 2.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert date:
+Month > january
+Day   > 15
+Year  > 2012
+Pushed JANUARY 15 2012 into stack 2.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert date:
+Month > december
+Day   > 6
+Year  > 1991
+Pushed DECEMBER 6 1991 into stack 3.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert date:
+Month > march
+Day   > 5
+Year  > 1886
+Pushed MARCH 5 1886 into stack 3.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert date:
+Month > october
+Day   > 24
+Year  > 1996
+Pushed OCTOBER 24 1996 into stack 1.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert date:
+Month > november
+Day   > 23
+Year  > 1996
+Pushed NOVEMBER 23 1996 into stack 1.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert date:
+Month > november
+Day   > 2
+Year  > 1990
+Pushed NOVEMBER 2 1990 into stack 1.
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert date:
+Month > september
+Day   > 14
+Year  > 1998
+Pushed SEPTEMBER 14 1998 into stack 3.
+[i]nsert | [d]elete | e[x]it
+> x
+
+[2012-12-03 23:29:18] process terminated successfully (elapsed time: 02:16.83s)

@@ -1,0 +1,199 @@
+with Ada.Text_IO; use Ada.Text_IO;
+with StackThing;
+
+procedure main is
+   package MyInt_IO is new Ada.Text_IO.Integer_IO(Integer);
+   use MyInt_IO;
+
+   type nameType is (Henderson, Lenug, Smith, Rocha, Johnson, Emanuel, 
+                     McWilliams, Wieser, Thorell, Taylor, Utsey, Cleek, 
+                     Krotowski, Sanchez, Nelson, Redd, Holub, Pruett, 
+                     Acevedo, -- Do, -- compiler gives error of not allowing "Do" as it's a reserved word
+                     Broussard);
+   package nameType_IO is new Ada.Text_IO.Enumeration_IO(nameType);
+   use nameType_IO;
+
+   type MonthName is (January, February, March, April, May, June,
+                      July, August, September, October, November, December);
+   package MonthType_IO is new Ada.Text_IO.Enumeration_IO(MonthName);
+   use MonthType_IO;
+
+   type dateType is record
+      Month: MonthName;
+      Day: Integer range 1..31;
+      Year: Integer range 1400..2020;
+   end record;
+
+   M, N, L0, stack_num: integer;
+   success: boolean := true;
+   action, menu_select: character;
+   in_name: nameType;
+   in_date: dateType;
+
+begin
+   Put_Line("Lab 2");
+   Put_Line("-----");
+   Put_Line("c - Use C Option Data");
+   Put_Line("b - Use B Option Data");
+   Put_Line("a - Use A Option Data");
+   Put_Line("---------------------");
+   Put("> ");
+   get(menu_select);
+   case(menu_select) is
+   when 'c' =>
+      L0 := -2;
+      M := 15;
+      N := 4;
+      declare
+         package myStack is new StackThing(L0, M, N, nameType);
+         use myStack;
+      begin
+         loop
+            New_Line;
+            loop
+               Put_Line("[i]nsert | [d]elete | e[x]it");
+               Put("> ");
+               Get(action);
+               exit when action = 'i' OR action = 'd' OR action = 'x';
+               Put_Line("Input error. Enter 'i', 'd' or 'x'.");
+            end loop;
+            exit when action = 'x';
+            loop
+               Put_Line("Which stack?");
+               Put("> ");
+               Get(stack_num);
+               exit when stack_num > 0 AND stack_num <= N;
+               Put_Line("Input error. Bad stack number.");
+            end loop;
+            if action = 'i' then
+               Skip_Line;
+               Put_Line("Insert what data?");
+               Put("> ");
+               Get(in_name);
+               Push(in_name, stack_num, success);
+               if success = true then
+                  Put("Pushed ");
+                  Put(in_name);
+                  Put(" into stack "); Put(stack_num, 0); Put(".");
+                  New_Line;
+               else
+                  Put("Complete overflow. All memory exhausted.");
+                  exit;
+               end if;
+            else
+               Pop(in_name, stack_num, success);
+               if success = true then
+                  Put("Popped: "); Put(in_name); Put(" from stack "); Put(stack_num, 0); Put(".");
+                  New_Line;
+               end if;
+            end if;
+         end loop;
+      end;
+   when 'b' =>
+      L0 := 15;
+      M := 39;
+      N := 3;
+      declare
+         package myStack is new StackThing(L0, M, N, nameType);
+         use myStack;
+      begin
+         loop
+            New_Line;
+            loop
+               Put_Line("[i]nsert | [d]elete | e[x]it");
+               Put("> ");
+               Get(action);
+               exit when action = 'i' OR action = 'd' OR action = 'x';
+               Put_Line("Input error. Enter 'i', 'd' or 'x'.");
+            end loop;
+            exit when action = 'x';
+            loop
+               Put_Line("Which stack?");
+               Put("> ");
+               Get(stack_num);
+               exit when stack_num > 0 AND stack_num <= N;
+               Put_Line("Input error. Bad stack number.");
+            end loop;
+            if action = 'i' then
+               Skip_Line;
+               Put_Line("Insert what data?");
+               Put("> ");
+               Get(in_name);
+               Push(in_name, stack_num, success);
+               if success = true then
+                  Put("Pushed ");
+                  Put(in_name);
+                  Put(" into stack "); Put(stack_num, 0); Put(".");
+                  New_Line;
+               else
+                  Put("Complete overflow. All memory exhausted.");
+                  exit;
+               end if;
+            else
+               Pop(in_name, stack_num, success);
+               if success = true then
+                  Put("Popped: "); Put(in_name); Put(" from stack "); Put(stack_num, 0); Put(".");
+                  New_Line;
+               end if;
+            end if;
+         end loop;
+      end;
+   when 'a' =>
+      L0 := 0;
+      M := 20;
+      N := 3;
+      declare
+         package myStack is new StackThing(L0, M, N, dateType);
+         use myStack;
+      begin
+         loop
+            New_Line;
+            loop
+               Put_Line("[i]nsert | [d]elete | e[x]it");
+               Put("> ");
+               Get(action);
+               exit when action = 'i' OR action = 'd' OR action = 'x';
+               Put_Line("Input error. Enter 'i', 'd' or 'x'.");
+            end loop;
+            exit when action = 'x';
+            loop
+               Put_Line("Which stack?");
+               Put("> ");
+               Get(stack_num);
+               exit when stack_num > 0 AND stack_num <= N;
+               Put_Line("Input error. Bad stack number.");
+            end loop;
+            if action = 'i' then
+               Skip_Line;
+               Put_Line("Insert date:");
+               Put("Month > ");
+               Get(in_date.Month);
+               Put("Day   > ");
+               Get(in_date.Day);
+               Put("Year  > ");
+               Get(in_date.Year);
+               Push(in_date, stack_num, success);
+               if success = true then
+                  Put("Pushed "); Put(in_date.Month); Put(" ");
+                  Put(in_date.Day,0); Put(" ");
+                  Put(in_date.Year,0); Put(" into stack ");
+                  Put(stack_num, 0); Put(".");
+               else
+                  Put("Complete overflow. All memory exhausted.");
+                  exit;
+               end if;
+            else
+               Pop(in_date, stack_num, success);
+               if success = true then
+                  Put("Popped: "); Put(in_date.Month); Put(" "); Put(in_date.Day,0); Put(", "); Put(in_date.Year,0);
+                  Put(" from stack "); Put(stack_num);
+               end if;
+            end if;
+         end loop;
+      end;
+   when others =>
+      begin
+         Put_Line("Invalid input. Try again.");
+      end;
+   end case;
+end main;

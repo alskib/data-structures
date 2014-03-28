@@ -1,0 +1,253 @@
+WITH Ada.Text_IO; USE Ada.Text_IO;
+WITH Ada.Exceptions; USE Ada.Exceptions;
+WITH StackThing;
+WITH Unchecked_Conversion;
+
+PROCEDURE Main IS
+   TYPE MonthName IS (January, February, March, April, May, June, July, August, September, October, November, December, DONE);
+   TYPE DateType IS RECORD
+      Month: MonthName;
+      Day: Integer RANGE 1..31;
+      Year: Integer;
+   END RECORD;
+
+   PACKAGE MonthNameIO IS NEW Ada.Text_IO.Enumeration_IO(MonthName); USE MonthnameIO;
+   PACKAGE MyInt_IO IS NEW Ada.Text_IO.Integer_IO(Integer); USE MyInt_IO;
+
+   FUNCTION IntToChar IS NEW Unchecked_Conversion(Integer, Character);
+   FUNCTION CharToInt IS NEW Unchecked_Conversion(Character, Integer);
+
+   Count: Integer := 0;
+   In_Char : Character;
+   In_Int, Stacktype : Integer;
+   In_Date : Datetype;
+   StackSize : Integer := 5;
+   Success : Boolean;
+BEGIN
+   LOOP
+      Main_Menu:
+      LOOP
+         Put_Line("Stack menu");
+         Put_Line("----------");
+         Put_Line("1 - Character");
+         Put_Line("2 - Integer");
+         Put_Line("3 - Date");
+         Put_Line("4 - EXIT");
+         Put("> ");
+         Get(StackType);
+         EXIT Main_Menu WHEN Stacktype = 1 OR Stacktype = 2 OR Stacktype = 3 OR Stacktype = 4;
+         Put("Input error. Enter 1 through 4 -");
+      END LOOP Main_Menu;
+      EXIT WHEN Stacktype = 4;
+      Put_Line("Enter stack size: ");
+      Put("> ");
+      Get(Stacksize);
+      New_Line;
+      CASE Stacktype IS
+      WHEN 1 =>
+         DECLARE
+            PACKAGE Character_Stack IS NEW StackThing(Stacksize, Character);
+            USE Character_Stack;
+         BEGIN
+            LOOP
+               Put_Line("Stack Operations");
+               Put_Line("----------------");
+               Put_Line("1 - Push");
+               Put_Line("2 - Pop");
+               Put_Line("3 - EXIT");
+               Put("> ");
+               Get(In_Int);
+               EXIT WHEN In_Int = 3;
+               CASE In_Int IS
+               WHEN 1 =>
+                  BEGIN
+                     Success := True;
+                     Count := 0;
+                     Put_Line("Push what? (End string with !)");
+                     Put("> ");
+                     LOOP
+                        Get(In_Char);
+                        EXIT WHEN In_Char = '!' OR Success = False;
+                        Push(In_Char, Success);
+                        IF Success = True THEN
+                           Count := Count + 1;
+                        END IF;
+                     END LOOP;
+                     IF Success = True THEN
+                        In_Char := IntToChar(Count);
+                        Push(In_Char, Success);
+                     END IF;
+                     IF Success = False THEN
+                        FOR I IN 1..Count LOOP
+                           Pop(In_Char, Success);
+                        END LOOP;
+                        Skip_Line;
+                     END IF;
+                     New_Line;
+                     END;
+               WHEN 2 =>
+                  BEGIN
+                     Pop(In_Char, Success);
+                     IF Success = True THEN
+                          Count := CharToInt(In_Char);
+                        Put(Count,0);
+                        WHILE Count > 0 LOOP
+                           Pop(In_Char, Success);
+                           Put(In_Char);
+                           Count := Count - 1;
+                        END LOOP;
+                        New_Line;
+                        New_Line;
+                     END IF;
+                  END;
+               WHEN OTHERS =>
+                  BEGIN
+                     Put_Line("Input error.");
+                  END;
+               END CASE;
+            END LOOP;
+         END;
+
+      WHEN 2 =>
+         DECLARE
+            PACKAGE Integer_Stack IS NEW StackThing(StackSize, Integer);
+            USE Integer_Stack;
+         BEGIN
+            LOOP
+               Put_Line("Stack Operations");
+               Put_Line("----------------");
+               Put_Line("1 - Push");
+               Put_Line("2 - Pop");
+               Put_Line("3 - EXIT");
+               Put("> ");
+               Get(In_Int);
+               New_Line;
+               EXIT WHEN In_Int = 3;
+               CASE In_Int IS
+               WHEN 1 =>
+                  BEGIN
+                     Success := True;
+                     Count := 0;
+                     Put_Line("Push what? (Separated by commas, terminate with 0");
+                     Put("> ");
+                     LOOP
+                        Get(In_Int);
+                        EXIT WHEN In_Int = 0 OR Success = False;
+                        Push(In_Int, Success);
+                        IF Success = True THEN
+                           Count := Count + 1;
+                        END IF;
+                        Get(In_Char);
+                     END LOOP;
+                     IF Success = True THEN
+                        Push(Count, Success);
+                     END IF;
+                     IF Success = False THEN
+                        FOR I IN 1..Count LOOP
+                           Pop(In_Int, Success);
+                        END LOOP;
+                        Skip_Line;
+                     END IF;
+                  END;
+               WHEN 2 =>
+                  BEGIN
+                     Pop(Count, Success);
+                     IF Success = True THEN
+                        Put(Count);
+                        WHILE Count > 0 LOOP
+                           Pop(In_Int, Success);
+                           Put(In_Int);
+                           Put(", ");
+                           Count := Count - 1;
+                        END LOOP;
+                        New_Line;
+                     END IF;
+                  END;
+               WHEN OTHERS =>
+                  BEGIN
+                     Put_Line("Input error.");
+                  END;
+               END CASE;
+            END LOOP;
+         END;
+
+      WHEN 3 =>
+         DECLARE
+            PACKAGE Date_Stack IS NEW StackThing(Stacksize, Datetype);
+            USE Date_Stack;
+         BEGIN
+            LOOP
+               Put_Line("Stack Operations");
+               Put_Line("----------------");
+               Put_Line("1 - Push");
+               Put_Line("2 - Pop");
+               Put_Line("3 - EXIT");
+               Put("> ");
+               Get(In_Int);
+               New_Line;
+               EXIT WHEN In_Int = 3;
+               CASE In_Int IS
+               WHEN 1 =>
+                  BEGIN
+                     Success := True;
+                     Count := 0;
+                     Put_Line("Push what? (ex: 'January 31, 1970; DONE', delineate with semi-colons, terminate with DONE");
+                     Put("> ");
+                     LOOP
+                        Get(In_Date.Month); -- January
+                        EXIT WHEN In_Date.Month = Done OR Success = False;
+                        Get(In_Date.Day);   -- 31
+                        Get(In_Char);       -- ,
+                        Get(In_Date.Year);  -- 1970
+                        Get(In_Char);       -- ;
+                        Push(In_Date, Success);
+                        IF Success = True THEN
+                           Count := Count + 1;
+                        END IF;
+                     END LOOP;
+                     IF Success = True THEN
+                        In_Date.Year := Count;
+                        Push(In_Date, Success);
+                     ELSE
+                        Put_Line("Overflow.");
+                        FOR I IN 1..Count LOOP
+                           Pop(In_Date, Success);
+                        END LOOP;
+                        Skip_Line;
+                     END IF;
+                  END;
+               WHEN 2 =>
+                  BEGIN
+                     Pop(In_Date, Success);
+                     IF Success = True THEN
+                        Count := In_Date.Year;
+                        WHILE Count > 0 LOOP
+                           Pop(In_Date, Success);
+                           IF Success = True THEN
+                              Put(In_Date.Month);
+                              Put(In_Date.Day, 3);
+                              Put(" ");
+                              Put(In_Date.Year);
+                              Put("; ");
+                              Count := Count - 1;
+                           END IF;
+                        END LOOP;
+                        New_Line;
+                     END IF;
+                  END;
+               WHEN OTHERS =>
+                  BEGIN
+                     Put_Line("Input error.");
+                  END;
+               END CASE;
+            end loop;
+         end;
+      WHEN OTHERS =>
+         BEGIN
+            Put_Line("Invalid choice.");
+         END;
+      END CASE;
+   END LOOP;
+END Main;
+
+

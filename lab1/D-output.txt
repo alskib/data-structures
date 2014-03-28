@@ -1,0 +1,138 @@
+C:\Users\franklin\Documents\My Dropbox\class\cosc3319\labs\1\main
+Stack menu
+----------
+1 - Character
+2 - Integer
+3 - Date
+4 - EXIT
+> 1
+Enter stack size: 
+> 20
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+Push what? (End string with !)
+> Joe!
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+Push what? (End string with !)
+> moT!
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+Push what? (End string with !)
+> Betty!
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+5ytteB
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+3Tom
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+3eoJ
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+Error: Underflow
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+Push what? (End string with !)
+> Larry!
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+Push what? (End string with !)
+> Sarah!
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+Push what? (End string with !)
+> Bob!
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+3boB
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+Push what? (End string with !)
+> Harold!
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+Push what? (End string with !)
+> Sue!
+Error: Overflow
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 3
+Stack menu
+----------
+1 - Character
+2 - Integer
+3 - Date
+4 - EXIT
+> 4
+
+[2012-12-04 00:13:16] process terminated successfully (elapsed time: 52.92s)

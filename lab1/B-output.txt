@@ -1,0 +1,106 @@
+C:\Users\franklin\Documents\My Dropbox\class\cosc3319\labs\1\main
+Stack menu
+----------
+1 - Character
+2 - Integer
+3 - Date
+4 - EXIT
+> 2
+Enter stack size: 
+> 15
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+
+Push what? (Separated by commas, terminate with 0
+> 10, 25, 3, 46, 0
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+
+          4         46,           3,          25,          10, 
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+
+Push what? (Separated by commas, terminate with 0
+> 32, 12, 456, 7, 9, 0
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+
+Push what? (Separated by commas, terminate with 0
+> 5, 17, 0
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+
+Push what? (Separated by commas, terminate with 0
+> 3, 0
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+
+Push what? (Separated by commas, terminate with 0
+> 42, 23, 67, 0
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+
+          3         67,          23,          42, 
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+
+          1          3, 
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+
+Push what? (Separated by commas, terminate with 0
+> 34, 22, 56, 78, 54, 6, 17, 0
+Error: Overflow
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 3
+
+Stack menu
+----------
+1 - Character
+2 - Integer
+3 - Date
+4 - EXIT
+> 4
+
+[2012-12-04 00:17:38] process terminated successfully (elapsed time: 02:14.43s)

@@ -1,0 +1,59 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U g_stack%b		g_stack.adb		d2bc0fa8 NE OO PK GE KU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U g_stack%s		g_stack.ads		ba5048c4 BN EE NE OO PK GE KU
+
+D ada.ads		20120510125802 3ffc8e18
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-unccon.ads		20120510125800 f9eb8f06
+D g_stack.ads		20121204053940 ba5048c4
+D g_stack.adb		20121204054022 5081b2b8
+D interfac.ads		20120510125814 129923ea
+D i-cstrea.ads		20120510125814 1bd72c32
+D system.ads		20120510125846 6daf90c4
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 10|3r6 3r23
+X 7 a-textio.ads
+49K13*Text_IO 471e16 10|3w10 3r27
+263U14*Put_Line 10|17s10 25s10
+X 9 g_stack.ads
+4i4 Max_Size{integer} 10|6r16 7r26 11r16
+5+9 Item 12r28 13r28 10|6r29 9r25 21r25
+7k12*G_Stack 4z4 5z9 14l8 14e15 10|5b14 32l5 32t12
+12U17*Push 12>22 12<34 10|9b14 19l8 19t12
+12*22 X{5+9} 10|9b19 13r20
+12b34 Z{boolean} 10|9b31 14m10 16m10
+13U17*Pop 13<21 13<34 10|21b14 31l8 31t11
+13*21 X{5+9} 10|21b18 28m10
+13b34 Z{boolean} 10|21b31 24m10 27m10
+X 10 g_stack.adb
+6a4 S(9|5+9) 13m10 28r15
+7i4 Top{integer} 11r10 12m10 12r17 13r12 23r10 28r17 29m10 29r17
+

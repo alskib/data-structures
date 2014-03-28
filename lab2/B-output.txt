@@ -1,0 +1,309 @@
+C:\Users\franklin\Documents\My Dropbox\class\cosc3319\labs\2\main
+Lab 2
+-----
+c - Use C Option Data
+b - Use B Option Data
+a - Use A Option Data
+---------------------
+> b
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> henderson
+Pushed HENDERSON into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> lenug
+Pushed LENUG into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 1
+Popped: LENUG from stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> smith
+Pushed SMITH into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> smith
+Pushed SMITH into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert what data?
+> rocha
+Pushed ROCHA into stack 3.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert what data?
+> johnson
+Pushed JOHNSON into stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert what data?
+> emanuel
+Pushed EMANUEL into stack 3.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 3
+Popped: EMANUEL from stack 3.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> thorell
+Pushed THORELL into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert what data?
+> taylor
+Pushed TAYLOR into stack 3.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> utsey
+Pushed UTSEY into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> cleek
+Pushed CLEEK into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> lenug
+Pushed LENUG into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> henderson
+Pushed HENDERSON into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> taylor
+Overflow. Stack full.
+
+Contents before repacking: 
+Base[1] = 15. Top[1] = 24. OldTop[1] = 15.
+Base[2] = 23. Top[2] = 24. OldTop[2] = 23.
+Base[3] = 31. Top[3] = 33. OldTop[3] = 31.
+Base[4] = 39. Top[4] = 39. OldTop[4] = 39.
+
+Contents after repack: 
+Base[1] = 15. Top[1] = 24.
+Base[2] = 32. Top[2] = 33.
+Base[3] = 34. Top[3] = 36.
+Pushed TAYLOR into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 1
+Popped: TAYLOR from stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 1
+Popped: HENDERSON from stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 1
+Popped: LENUG from stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert what data?
+> pruett
+Pushed PRUETT into stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert what data?
+> smith
+Overflow. Stack full.
+
+Contents before repacking: 
+Base[1] = 15. Top[1] = 21. OldTop[1] = 24.
+Base[2] = 32. Top[2] = 35. OldTop[2] = 33.
+Base[3] = 34. Top[3] = 36. OldTop[3] = 36.
+Base[4] = 39. Top[4] = 39. OldTop[4] = 39.
+
+Contents after repack: 
+Base[1] = 15. Top[1] = 21.
+Base[2] = 21. Top[2] = 24.
+Base[3] = 36. Top[3] = 38.
+Pushed SMITH into stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> nelson
+Overflow. Stack full.
+
+Contents before repacking: 
+Base[1] = 15. Top[1] = 22. OldTop[1] = 21.
+Base[2] = 21. Top[2] = 24. OldTop[2] = 24.
+Base[3] = 36. Top[3] = 38. OldTop[3] = 38.
+Base[4] = 39. Top[4] = 39. OldTop[4] = 39.
+
+Contents after repack: 
+Base[1] = 15. Top[1] = 22.
+Base[2] = 33. Top[2] = 36.
+Base[3] = 36. Top[3] = 38.
+Pushed NELSON into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> redd
+Pushed REDD into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> holub
+Pushed HOLUB into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert what data?
+> pruett
+Overflow. Stack full.
+
+Contents before repacking: 
+Base[1] = 15. Top[1] = 24. OldTop[1] = 22.
+Base[2] = 33. Top[2] = 37. OldTop[2] = 36.
+Base[3] = 36. Top[3] = 38. OldTop[3] = 38.
+Base[4] = 39. Top[4] = 39. OldTop[4] = 39.
+
+Contents after repack: 
+Base[1] = 15. Top[1] = 24.
+Base[2] = 29. Top[2] = 33.
+Base[3] = 36. Top[3] = 38.
+Pushed PRUETT into stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> taylor
+Pushed TAYLOR into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 2
+Popped: PRUETT from stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 2
+Popped: SMITH from stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 2
+Popped: PRUETT from stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert what data?
+> rocha
+Pushed ROCHA into stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert what data?
+> acevedo
+Pushed ACEVEDO into stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> broussard
+Pushed BROUSSARD into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> broussard
+Pushed BROUSSARD into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> x
+
+[2012-12-03 23:26:46] process terminated successfully (elapsed time: 01:14.16s)

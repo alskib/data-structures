@@ -1,0 +1,105 @@
+C:\Users\franklin\Documents\My Dropbox\class\cosc3319\labs\1\main
+Stack menu
+----------
+1 - Character
+2 - Integer
+3 - Date
+4 - EXIT
+> 3
+Enter stack size: 
+> 8
+
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+
+Push what? (ex: 'January 31, 1970; DONE', delineate with semi-colons, terminate with DONE
+> January 15, 1952; February 23, 1492; September 1, 2004; DONE
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+
+Push what? (ex: 'January 31, 1970; DONE', delineate with semi-colons, terminate with DONE
+> October 12, 2003; DONE
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+
+Push what? (ex: 'January 31, 1970; DONE', delineate with semi-colons, terminate with DONE
+> February 4, 1777; December 24, 2003; June 12, 2004; DONE
+Error: Overflow
+Overflow.
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+
+OCTOBER 12        2003; 
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+
+SEPTEMBER  1        2004; FEBRUARY 23        1492; JANUARY 15        1952; 
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+
+Error: Underflow
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+
+Error: Underflow
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 1
+
+Push what? (ex: 'January 31, 1970; DONE', delineate with semi-colons, terminate with DONE
+> September 17, 1623; August 11, 2002; DONE
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 2
+
+AUGUST 11        2002; SEPTEMBER 17        1623; 
+Stack Operations
+----------------
+1 - Push
+2 - Pop
+3 - EXIT
+> 3
+
+Stack menu
+----------
+1 - Character
+2 - Integer
+3 - Date
+4 - EXIT
+> 4
+
+[2012-12-04 00:21:59] process terminated successfully (elapsed time: 02:26.24s)

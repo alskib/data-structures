@@ -1,0 +1,279 @@
+C:\Users\franklin\Documents\My Dropbox\class\cosc3319\labs\2\main
+Lab 2
+-----
+c - Use C Option Data
+b - Use B Option Data
+a - Use A Option Data
+---------------------
+> c
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> henderson
+Pushed HENDERSON into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> lenug
+Pushed LENUG into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 1
+Popped: LENUG from stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> smith
+Pushed SMITH into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> smith
+Pushed SMITH into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert what data?
+> rocha
+Pushed ROCHA into stack 3.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert what data?
+> johnson
+Pushed JOHNSON into stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert what data?
+> emanuel
+Pushed EMANUEL into stack 3.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 4
+Underflow. Stack empty.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 4
+Insert what data?
+> mcwilliams
+Pushed MCWILLIAMS into stack 4.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 4
+Insert what data?
+> wieser
+Pushed WIESER into stack 4.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 3
+Popped: EMANUEL from stack 3.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 4
+Popped: WIESER from stack 4.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> thorell
+Pushed THORELL into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 3
+Insert what data?
+> taylor
+Pushed TAYLOR into stack 3.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> utsey
+Overflow. Stack full.
+
+Contents before repacking: 
+Base[1] = -2. Top[1] =  3. OldTop[1] = -2.
+Base[2] =  2. Top[2] =  3. OldTop[2] =  2.
+Base[3] =  6. Top[3] =  8. OldTop[3] =  6.
+Base[4] = 10. Top[4] = 11. OldTop[4] = 10.
+Base[5] = 15. Top[5] = 15. OldTop[5] = 15.
+
+Contents after repack: 
+Base[1] = -2. Top[1] =  3.
+Base[2] =  7. Top[2] =  8.
+Base[3] =  9. Top[3] = 11.
+Base[4] = 12. Top[4] = 13.
+Pushed UTSEY into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> cleek
+Pushed CLEEK into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 4
+Insert what data?
+> smith
+Pushed SMITH into stack 4.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> lenug
+Pushed LENUG into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> henderson
+Pushed HENDERSON into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 1
+Insert what data?
+> taylor
+Pushed TAYLOR into stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 1
+Popped: TAYLOR from stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 1
+Popped: HENDERSON from stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> d
+Which stack?
+> 1
+Popped: LENUG from stack 1.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert what data?
+> pruett
+Pushed PRUETT into stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 4
+Insert what data?
+> rocha
+Pushed ROCHA into stack 4.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 4
+Insert what data?
+> krotowski
+Overflow. Stack full.
+
+Contents before repacking: 
+Base[1] = -2. Top[1] =  4. OldTop[1] =  3.
+Base[2] =  7. Top[2] =  9. OldTop[2] =  8.
+Base[3] =  9. Top[3] = 11. OldTop[3] = 11.
+Base[4] = 12. Top[4] = 16. OldTop[4] = 13.
+Base[5] = 15. Top[5] = 15. OldTop[5] = 15.
+
+Contents after repack: 
+Base[1] = -2. Top[1] =  4.
+Base[2] =  4. Top[2] =  6.
+Base[3] =  7. Top[3] =  9.
+Base[4] =  9. Top[4] = 13.
+Pushed KROTOWSKI into stack 4.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 2
+Insert what data?
+> smith
+Pushed SMITH into stack 2.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 4
+Insert what data?
+> rocha
+Pushed ROCHA into stack 4.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 4
+Insert what data?
+> smith
+Pushed SMITH into stack 4.
+
+[i]nsert | [d]elete | e[x]it
+> i
+Which stack?
+> 4
+Insert what data?
+> mcwilliams
+Overflow. Stack full.
+
+Contents before repacking: 
+Base[1] = -2. Top[1] =  4. OldTop[1] =  4.
+Base[2] =  4. Top[2] =  7. OldTop[2] =  6.
+Base[3] =  7. Top[3] =  9. OldTop[3] =  9.
+Base[4] =  9. Top[4] = 16. OldTop[4] = 13.
+Base[5] = 15. Top[5] = 15. OldTop[5] = 15.
+Complete overflow. All memory exhausted.
+[2012-12-03 23:25:04] process terminated successfully (elapsed time: 01:18.76s)

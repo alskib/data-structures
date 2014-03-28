@@ -1,0 +1,151 @@
+Linear Insert: FILLING HASH TABLE 60% (154 insertions).
+
+Linear Probe: PROBING FOR ITEMS 1 - 30.
+Min Probes: 1
+Max Probes: 29
+Avg Probes: 15.0344827586207
+Collisions: 406
+
+Linear Probe: PROBING FOR ITEMS 125 - 154.
+Min Probes: 1
+Max Probes: 151
+Avg Probes: 135.344827586207
+Collisions: 3895
+
+Print table (Y/N)?
+n
+
+Load factor 0.6015625, 1.75490196078431 expected probes.
+
+Linear Insert: FILLING HASH TABLE 90% (231 insertions).
+
+Linear Probe: PROBING FOR ITEMS 1 - 30.
+Min Probes: 1
+Max Probes: 29
+Avg Probes: 15.0344827586207
+Collisions: 406
+
+Linear Probe: PROBING FOR ITEMS 202 - 231.
+Min Probes: 1
+Max Probes: 229
+Avg Probes: 221.896551724138
+Collisions: 6405
+
+Print table (Y/N)?
+n
+
+Load factor 0.90234375, 5.62 expected probes.
+
+My Linear Insert: FILLING HASH TABLE 60% (154 insertions).
+
+My Linear Probe: PROBING FOR ITEMS 1 - 30.
+Min Probes: 1
+Max Probes: 3
+Avg Probes: 1.13793103448276
+Collisions: 3
+
+My Linear Probe: PROBING FOR ITEMS 125 - 154.
+Min Probes: 1
+Max Probes: 12
+Avg Probes: 3.24137931034483
+Collisions: 64
+
+Print table (Y/N)?
+n
+
+Load factor 0.6015625, 1.75490196078431 expected probes.
+
+My Linear Insert: FILLING HASH TABLE 90% (231 insertions).
+
+My Linear Probe: PROBING FOR ITEMS 1 - 30.
+Min Probes: 1
+Max Probes: 3
+Avg Probes: 1.13793103448276
+Collisions: 3
+
+My Linear Probe: PROBING FOR ITEMS 202 - 231.
+Min Probes: 1
+Max Probes: 72
+Avg Probes: 16.3448275862069
+Collisions: 444
+
+Print table (Y/N)?
+n
+
+Load factor 0.90234375, 5.62 expected probes.
+
+Random Insert: FILLING HASH TABLE 60% (154 insertions).
+
+Random Probe: PROBING FOR ITEMS 1 - 30.
+Min Probes: 1
+Max Probes: 2
+Avg Probes: 2
+Collisions: 28
+
+Random Probe: PROBING FOR ITEMS 125 - 154.
+Min Probes: 1
+Max Probes: 224
+Avg Probes: 147.620689655172
+Collisions: 4260
+
+Print table (Y/N)?
+n
+
+Load factor 0.6015625, 1.52969081549347 expected probes.
+
+Random Insert: FILLING HASH TABLE 90% (231 insertions).
+
+Random Probe: PROBING FOR ITEMS 1 - 30.
+Min Probes: 1
+Max Probes: 2
+Avg Probes: 2
+Collisions: 28
+
+Random Probe: PROBING FOR ITEMS 202 - 231.
+Min Probes: 1
+Max Probes: 253
+Avg Probes: 164.48275862069
+Collisions: 4747
+
+Print table (Y/N)?
+n
+
+Load factor 0.90234375, 2.57806586415805 expected probes.
+
+My Random Insert: FILLING HASH TABLE 60% (154 insertions).
+
+My Random Probe: PROBING FOR ITEMS 1 - 30.
+Min Probes: 1
+Max Probes: 3
+Avg Probes: 1.13793103448276
+Collisions: 3
+
+My Random Probe: PROBING FOR ITEMS 125 - 154.
+Min Probes: 1
+Max Probes: 215
+Avg Probes: 99.7586206896552
+Collisions: 2870
+
+Print table (Y/N)?
+n
+
+Load factor 0.6015625, 1.52969081549347 expected probes.
+
+My Random Insert: FILLING HASH TABLE 90% (231 insertions).
+
+My Random Probe: PROBING FOR ITEMS 1 - 30.
+Min Probes: 1
+Max Probes: 3
+Avg Probes: 1.13793103448276
+Collisions: 3
+
+My Random Probe: PROBING FOR ITEMS 202 - 231.
+Min Probes: 1
+Max Probes: 226
+Avg Probes: 103.965517241379
+Collisions: 2988
+
+Print table (Y/N)?
+n
+
+Load factor 0.90234375, 2.57806586415805 expected probes.

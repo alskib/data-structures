@@ -1,0 +1,29 @@
+-- user end of generic stack
+
+WITH Ada.Text_IO; USE Ada.Text_IO;
+WITH Ada.Exceptions; USE Ada.Exceptions;
+WITH G_Stack;
+WITH Unchecked_Conversion;
+
+PROCEDURE Main IS
+   TYPE MonthName IS (January, February, March, April, May, June, July, August, September, October, November, December, DONE);
+   TYPE DateType IS RECORD
+      Month: MonthName;
+      Day: Integer RANGE 1..31;
+      Year: Integer;
+   END RECORD;
+
+   PACKAGE MonthNameIO IS NEW Ada.Text_IO.Enumeration_IO(MonthName); USE MonthnameIO;
+   PACKAGE MyInt_IO IS NEW Ada.Text_IO.Integer_IO(Integer); USE MyInt_IO;
+
+   FUNCTION IntToChar IS NEW Unchecked_Conversion(Integer, Character);
+   FUNCTION CharToInt IS NEW Unchecked_Conversion(Character, Integer);
+
+   Count: Integer := 0;
+   In_Char : Character;
+   In_Int, Stacktype : Integer;
+   In_Date : Datetype;
+   StackSize : Integer := 5;
+   Did_It_Work : Boolean;
+
+

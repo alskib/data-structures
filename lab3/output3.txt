@@ -1,0 +1,54 @@
+Enter input filename or "EXIT": 
+in1.txt
+Processing 12 relations.
+Processing 5 < 4
+Processing 6 < 9
+Processing 3 < 2
+Processing 5 < 7
+Processing 5 < 3
+Processing 4 < 6
+Processing 6 < 3
+Processing 6 < 1
+Processing 8 < 9
+Processing 7 < 3
+Processing 2 < 9
+Processing 5 < 4
+Performing action: 5
+Performing action: 8
+Performing action: 10
+Performing action: 11
+Performing action: 12
+Performing action: 7
+Performing action: 4
+Performing action: 6
+Performing action: 1
+Performing action: 3
+Performing action: 2
+Performing action: 9
+Process completed.
+null
+Enter input filename or "EXIT": 
+in2.txt
+Processing 12 relations.
+Processing 5 < 4
+Processing 6 < 9
+Processing 3 < 2
+Processing 5 < 7
+Processing 3 < 5
+Processing 4 < 6
+Processing 6 < 3
+Processing 6 < 1
+Processing 8 < 9
+Processing 7 < 3
+Processing 2 < 9
+Processing 5 < 4
+Performing action: 8
+Performing action: 10
+Performing action: 11
+Performing action: 12
+Loop found.
+6...
+4...
+5...
+3...
+Enter input filename or "EXIT": 

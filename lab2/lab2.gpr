@@ -1,0 +1,6 @@
+project Lab2 is
+
+   for Main use ("main.adb");
+
+end Lab2;
+

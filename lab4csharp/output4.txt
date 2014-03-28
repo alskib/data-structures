@@ -1,0 +1,107 @@
+Inserting data...
+
+C2 Finding Ebrahimi iteratively...
+C2 Customer not found.
+
+C3 Finding Ebrahimi recursively...
+C3 Customer not found.
+
+C4 Finding Pruett and printing phone number iteratively...
+Pruett - 295-1882
+
+C5 Finding Pruett and printing phone number recursively...
+Pruett - 295-1882
+
+C6 Traversing in-order from Nelson
+Nelson - 295-1601
+Pruett - 295-1882
+Smith - 295-1492
+Smith - 294-8075
+Thorell - 584-3622
+Henderson - 291-7890
+Ji - 293-6122
+Lenug - 291-1864
+
+C7 Inserting additonal nodes...
+
+C8 Traversing in-order froom root...
+Henderson - 291-7890
+Ji - 293-6122
+Lenug - 291-1864
+Lewis - 294-1882
+Nelson - 295-1601
+Pruett - 295-1882
+Smith - 295-1492
+Smith - 294-8075
+Thorell - 584-3622
+Wieser - 294-1568
+Xin - 295-6622
+
+B7 Deleting nodes...
+Ji deleted.
+Thorell deleted.
+Wieser deleted.
+Burris not found. No action taken.
+
+B8 Inserting new nodes...
+
+B9 Traversing in-order from root...
+Henderson - 291-7890
+Ji - 293-6122
+Lenug - 291-1864
+Lewis - 294-1882
+Nelson - 295-1601
+Pruett - 295-1882
+Reioux - 294-1666
+Sanchez - 295-1882
+Smith - 295-1492
+Smith - 294-8075
+Xin - 295-6622
+
+B10 Traversing in Reverse-In-Order from root...
+Xin - 295-6622
+Smith - 294-8075
+Smith - 295-1492
+Sanchez - 295-1882
+Reioux - 294-1666
+Pruett - 295-1882
+Nelson - 295-1601
+Lewis - 294-1882
+Lenug - 291-1864
+Henderson - 291-7890
+
+B11 Traversing in Pre-Order from root...
+Smith - 295-1492
+Lenug - 291-1864
+Henderson - 291-7890
+Nelson - 295-1601
+Lewis - 294-1882
+Pruett - 295-1882
+Reioux - 294-1666
+Sanchez - 295-1882
+Smith - 294-8075
+Xin - 295-6622
+
+A12 Traversing Post-Order iteratively from root...
+Henderson - 291-7890
+Lewis - 294-1882
+Sanchez - 295-1882
+Reioux - 294-1666
+Pruett - 295-1882
+Nelson - 295-1601
+Lenug - 291-1864
+Xin - 295-6622
+Smith - 294-8075
+Smith - 295-1492
+
+A13 Traversing Post-Order recursively from root...
+Henderson - 291-7890
+Lewis - 294-1882
+Sanchez - 295-1882
+Reioux - 294-1666
+Pruett - 295-1882
+Nelson - 295-1601
+Lenug - 291-1864
+Xin - 295-6622
+Smith - 294-8075
+Smith - 295-1492

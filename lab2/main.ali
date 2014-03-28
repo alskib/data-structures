@@ -1,0 +1,149 @@
+V "GNAT Lib v2012"
+M P W=b
+A -gnatA
+P ZX
+R nnnnnnnnnnvnnnnvnnvnnvnnvvnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U main%b		main.adb		e107807c NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.enumeration_aux%s  a-tienau.adb	a-tienau.ali
+W ada.text_io.enumeration_io%s
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+W interfaces%s		interfac.ads		interfac.ali
+W stackthing%s		stackthing.adb		stackthing.ali
+W system%s		system.ads		system.ali
+W system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+W system.val_enum%s	s-valenu.adb		s-valenu.ali
+
+D ada.ads		20120510125802 3ffc8e18
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-tienau.ads		20120510125800 6a9c157b
+D a-tienio.ads		20120510125800 fc618ae6
+D a-tienio.adb		20120510125800 c9e6b5af
+D a-tiinau.ads		20120510125800 8114c8e4
+D a-tiinio.ads		20120510125800 aa04e5d6
+D a-tiinio.adb		20120510125800 df9cd7af
+D a-unccon.ads		20120510125800 f9eb8f06
+D interfac.ads		20120510125814 129923ea
+D i-cstrea.ads		20120510125814 1bd72c32
+D main.adb		20121204044058 4199ca96
+D stackthing.ads	20121123215906 98f3bf3e
+D stackthing.adb	20121204053334 cd2c682e
+D system.ads		20120510125846 6daf90c4
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-imenne.ads		20120510125824 8707cbf0
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-valenu.ads		20120510125838 bb1a4295
+D s-wchcon.ads		20120510125840 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 17|1r6 1r23 5r28 13r31 18r32
+X 7 a-textio.ads
+49K13*Text_IO 471e16 17|1w10 1r27 5r32 13r35 18r36
+166U14*New_Line 17|52s13 78s19 87s19 101s13 127s19 136s19 150s13
+169U14*Skip_Line 17|69s16 118s16 167s16
+206U14*Get 17|41s4 56s16 105s16 154s16
+242U14*Put 17|40s4 55s16 63s16 71s16 75s19 77s19 77s59 80s19 86s19 86s50
+. 86s90 104s16 112s16 120s16 124s19 126s19 126s59 129s19 135s19 135s50 135s90
+. 153s16 161s16 169s16 171s16 173s16 177s19 177s55 178s39 179s40 180s38 182s19
+. 188s19 188s56 188s86 189s19
+263U14*Put_Line 17|34s4 35s4 36s4 37s4 38s4 39s4 54s16 58s16 62s16 66s16
+. 70s16 103s16 107s16 111s16 115s16 119s16 152s16 156s16 160s16 164s16 168s16
+. 196s10
+X 9 a-tienio.ads
+46k21*Enumeration_IO 75e31 17|13r43 18r44
+52U14 Get 17|72s16[13] 121s16[13] 170s16[18]
+60U14 Put 17|76s19[13] 86s36[13] 125s19[13] 135s36[13] 177s35[18] 188s36[18]
+X 12 a-tiinio.ads
+45k21*Integer_IO 84e27 17|5r40
+55U14 Get 17|64s16[5] 113s16[5] 162s16[5] 172s16[5] 174s16[5]
+65U14 Put 17|77s40[5] 86s71[5] 126s40[5] 135s71[5] 178s19[5] 179s19[5] 180s19[5]
+. 188s66[5] 188s97[5] 189s40[5]
+X 17 main.adb
+4U11*main 4b11 199l5 199t9
+5K12 MyInt_IO[12|45] 6r8
+8E9 nameType 12e32 13r58 30r13 48r54 97r54
+8n22 Henderson{8E9}
+8n33 Lenug{8E9}
+8n40 Smith{8E9}
+8n47 Rocha{8E9}
+8n54 Johnson{8E9}
+8n63 Emanuel{8E9}
+9n22 McWilliams{8E9}
+9n34 Wieser{8E9}
+9n42 Thorell{8E9}
+9n51 Taylor{8E9}
+9n59 Utsey{8E9}
+9n66 Cleek{8E9}
+10n22 Krotowski{8E9}
+10n33 Sanchez{8E9}
+10n42 Nelson{8E9}
+10n50 Redd{8E9}
+10n56 Holub{8E9}
+10n63 Pruett{8E9}
+11n22 Acevedo{8E9}
+12n22 Broussard{8E9}
+13K12 nameType_IO[9|46] 14r8
+16E9 MonthName 17e76 18r59 22r14
+16n23 January{16E9}
+16n32 February{16E9}
+16n42 March{16E9}
+16n49 April{16E9}
+16n56 May{16E9}
+16n61 June{16E9}
+17n23 July{16E9}
+17n29 August{16E9}
+17n37 September{16E9}
+17n48 October{16E9}
+17n57 November{16E9}
+17n67 December{16E9}
+18K12 MonthType_IO[9|46] 19r8
+21R9 dateType 25e14 31r13 146r54
+22e7 Month{16E9} 170m28 177r47 188r48
+23i7 Day{integer} 172m28 178r31 188r78
+24i7 Year{integer} 174m28 179r31 188r109
+27i4 M{integer} 45m7 48r48 94m7 97r48 143m7 146r48
+27i7 N{integer} 46m7 48r51 65r57 95m7 97r51 114r57 144m7 146r51 163r57
+27i10 L0{integer} 44m7 48r44 93m7 97r44 142m7 146r44
+27i14 stack_num{integer} 64m20 64r20 65r26 65r44 73r30 77r44 84r29 86r75
+. 113m20 113r20 114r26 114r44 122r30 126r44 133r29 135r75 162m20 162r20 163r26
+. 163r44 175r30 180r23 186r29 189r44
+28b4 success{boolean} 73m41 73r41 74r19 84m40 84r40 85r19 122m41 122r41 123r19
+. 133m40 133r40 134r19 175m41 175r41 176r19 186m40 186r40 187r19
+29e4 action{character} 56m20 56r20 57r26 57r42 57r58 60r23 68r16 105m20 105r20
+. 106r26 106r42 106r58 109r23 117r16 154m20 154r20 155r26 155r42 155r58 158r23
+. 166r16
+29e12 menu_select{character} 41m8 41r8 42r9
+30e4 in_name{8E9} 72m20 72r20 73r21 76r23 84m20 84r20 86r40 121m20 121r20
+. 122r21 125r23 133m20 133r20 135r40
+31r4 in_date{21R9} 170m20 170r20 172m20 172r20 174m20 174r20 175r21 177r39
+. 178r23 179r23 186m20 186r20 188r40 188r70 188r101
+48K18 myStack[18|9] 49r14
+97K18 myStack[18|9] 98r14
+146K18 myStack[18|9] 147r14
+X 18 stackthing.ads
+9k12*StackThing 17|2w6 48r33 97r33 146r33 18|12e18
+10U17 Push 17|73s16[48] 122s16[97] 175s16[146]
+11U17 Pop 17|84s16[48] 133s16[97] 186s16[146]
+

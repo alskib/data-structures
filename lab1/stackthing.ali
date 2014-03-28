@@ -1,0 +1,59 @@
+V "GNAT Lib v2012"
+A -gnatA
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnvnnnnnnnnnnnnnn
+
+U stackthing%b		stackthing.adb		3d1a2fde NE OO PK GE KU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U stackthing%s		stackthing.ads		4898c2ef BN EE NE OO PK GE KU
+
+D ada.ads		20120510125802 3ffc8e18
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125752 52ecdc1b
+D a-ioexce.ads		20120510125752 8b9de6cd
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125758 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-unccon.ads		20120510125800 f9eb8f06
+D interfac.ads		20120510125814 129923ea
+D i-cstrea.ads		20120510125814 1bd72c32
+D stackthing.ads	20121204055838 4898c2ef
+D stackthing.adb	20121204055832 4def18e5
+D system.ads		20120510125846 6daf90c4
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125824 443b9d66
+D s-finmas.ads		20120510125824 b95bb341
+D s-finroo.ads		20120510125824 4ff27390
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-soflin.ads		20120510125832 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 12|1r6 1r23
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 1r27
+263U14*Put_Line 12|15s10 23s10
+X 11 stackthing.ads
+2i4 Max_Size{integer} 12|4r16 5r26 9r16
+3+9 Item 6r28 7r28 12|4r29 7r25 19r25
+5k12*StackThing 2z4 3z9 8l8 8e18 12|3b14 30l5 30t15
+6U17*Push 6>22 6<34 12|7b14 17l8 17t12
+6*22 X{3+9} 12|7b19 11r20
+6b34 Z{boolean} 12|7b31 12m10 14m10
+7U17*Pop 7<21 7<34 12|19b14 29l8 29t11
+7*21 X{3+9} 12|19b18 26m10
+7b34 Z{boolean} 12|19b31 22m10 25m10
+X 12 stackthing.adb
+4a4 S(11|3+9) 11m10 26r15
+5i4 Top{integer} 9r10 10m10 10r17 11r12 21r10 26r17 27m10 27r17
+
