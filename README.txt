@@ -1,0 +1,1 @@
+These are labs from my Data Structures course. This was my first heavy programming course so it's kind of messy, and we all pretty much used Ada in the beginning because the professor's notes were in it.
